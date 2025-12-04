@@ -1,0 +1,20 @@
+{
+  "name": "kepel",
+  "version": "1.0.0",
+  "description": "Cypress automation test: API & UI testing",
+  "author": "damar",
+  "scripts": {
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "cypress:run:json": "cypress run --reporter mochawesome --reporter-options reportDir=cypress/reports,json=true,overwrite=false,html=false",
+    "merge-reports": "mochawesome-merge cypress/reports/*.json > cypress/reports/report.json",
+    "generate-report": "marge cypress/reports/report.json -f final-report -o cypress/reports"
+  },
+  "devDependencies": {
+    "cypress": "^15.7.1",
+    "mochawesome": "^7.1.4",
+    "mochawesome-merge": "^5.1.0",
+    "mochawesome-report-generator": "^6.3.2",
+    "xlsx": "^0.18.5"
+  }
+}
