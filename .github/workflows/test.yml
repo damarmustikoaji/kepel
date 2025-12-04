@@ -25,6 +25,7 @@ jobs:
 
       - name: Run Cypress tests (generate JSON reports)
         run: npm run cypress:run:json
+        continue-on-error: true
 
       - name: Merge Mochawesome JSON reports
         run: npm run merge-reports

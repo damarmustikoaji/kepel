@@ -1,5 +1,7 @@
 node_modules/
 .cypress/
-/videos/
-/screenshots/
+cypress/videos
+cypress/screenshots
 cypress/reports/
+.DS_Store
+cypress/.DS_Store
